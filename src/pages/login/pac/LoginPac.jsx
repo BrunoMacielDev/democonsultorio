@@ -4,7 +4,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./loginPac.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import * as API from "../../../services/services";
 import { useToast } from "@chakra-ui/react";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
@@ -36,11 +35,6 @@ const LoginPac = () => {
     <div className="gradient__bg container__loginPac">
       <div className="container__loginPac-card">
         <div className="container__loginPac-card_column">
-          <div className="loginPac_button_back">
-            <Link to={"/login"}>
-              <IoArrowBackCircleOutline size={30}/>
-            </Link>
-          </div>
           <h1>Ingreso pacientes</h1>
           <p>Por favor, ingrese sus datos.</p>
           <form onSubmit={handleSubmit}>
