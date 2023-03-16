@@ -3,10 +3,9 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./loginPac.css";
+import "./LoginPac.css";
 import * as API from "../../../services/services";
 import { useToast } from "@chakra-ui/react";
-import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 const LoginPac = () => {
   const toast = useToast();
