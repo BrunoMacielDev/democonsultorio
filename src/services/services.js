@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:3001";
+const baseURL = "https://democonsultorio-api.onrender.com";
 
 export async function getAnFamilia() {
   try {
