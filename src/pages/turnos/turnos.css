@@ -1,0 +1,213 @@
+.list_turnos{
+    margin-top: 1rem;
+    font-family: var(--font-family);
+    padding: 1rem;
+}
+
+.list_turnos h2{
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.list_turnos table{
+    background: #fff;
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+    transition: all 300ms ease;
+}
+
+.list_turnos table:hover{
+    box-shadow: none;
+}
+.list_turnos table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+    color: #677483;
+}
+
+.list_turnos table tbody tr:last-child td{
+    border: none;
+}
+
+.list_turnos .btn{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+}
+
+.turnos-btn button{
+    margin: 1rem;
+}
+
+.turnos-btn a{
+    padding: 5px 25px;
+   display: inline-block;
+   font-size: 16px;
+   border: 2px solid #0037ff;
+   color: black;
+   border-radius: 40px;
+   cursor: pointer;
+   transition: all .3s;
+}
+.turnos-btn a:hover{
+background-color: #0037ff;
+color: white;
+}
+
+.solicitar-turno_heading{
+    width: 100%;
+    text-align: left;
+    padding: 2rem 0 0 3rem;
+}
+
+.solicitar-turno_heading h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.turnos__actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turnos__actions button{
+    margin: 0.1rem;
+    padding: 2px 2px;
+    transition: all .3s;
+    /* border: 1px solid black; */
+    /* border-radius: 40px; */
+    font-size: 25px;
+    /* background: white; */
+}
+
+.turnos__actions svg{
+    margin: 0.2rem;
+}
+
+ .turnos__actions .check svg{
+    color: #00D40C;
+}
+
+.turnos__actions .check svg:hover{
+    color: black;
+}
+
+.turnos__actions .cross svg{
+    color: red;
+}
+
+.turnos__actions .cross svg:hover{
+    color: black;
+}
+
+
+.turnos__actions .edit svg{
+    color: #0037ff;
+}
+
+.turnos__actions .edit svg:hover{
+    color: black;
+}
+
+.container__modal-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container__modal-btn button{
+    background-color: var(--color-main);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .2s;
+    font-size: 18px;
+    margin: 0.1rem;
+}
+
+.container__modal-btn button:active{
+    scale: .95;
+    background-color: darken(var(--color-main), 10%);
+ }
+
+ .asignar-turno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ @media screen and (max-width: 920px) {
+    .asignar-turno .container__solturno-card{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .list_turnos table thead tr{
+        font-size: 15px;
+        padding: 0.5rem;
+    }
+
+    .list_turnos table tbody td{
+        font-size: 15px;
+        padding: 0.5rem;
+    }
+
+    .turnos__actions button{
+        font-size: 22px;
+    }
+
+    .asignar-turno .container__solturno-card{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+
+ @media screen and (max-width: 550px) {
+    .solicitar-turno_heading h1{
+        font-size: 45px;
+    }
+    .list_turnos .list-header{
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+    }
+
+    .list_turnos .list-header h2{
+        font-size: 18px;
+    }
+    .list_turnos .list-header svg{
+        font-size: 18px;
+    }
+
+    .list_turnos table thead tr{
+        font-size: 13px;
+        padding: 0.5rem;
+    }
+
+    .list_turnos table tbody td{
+        font-size: 13px;
+        padding: 0.5rem;
+    }
+    .turnos__actions button{
+        font-size: 20px;
+
+    }
+ }
+
+ @media screen and (max-width: 400px) {
+    .list_turnos .list-header h2{
+        font-size: 14px;
+    }
+ }

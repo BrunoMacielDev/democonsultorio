@@ -1,0 +1,70 @@
+.seccion__servicios{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion__servicios-heading{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.seccion__servicios-heading h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.seccion__servicios-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.seccion__servicios-container_groupB{
+    flex: 1;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    
+}
+
+@media screen and (max-width: 990px) {
+    .seccion__servicios-container{
+        flex-direction: column-reverse;
+    }
+
+    .seccion__servicios-container_groupA{
+        margin: 2rem 0;
+    }
+    .seccion__servicios-container_groupA .seccion__servicios-container_article{
+        width: 48%;
+    }
+    .seccion__servicios-container_groupA .seccion__servicios-container_article-image{
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .seccion__servicios-container_groupB{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .seccion__servicios-container_groupA .seccion__servicios-container_article{
+        width: 100%;
+    }
+
+    .seccion__servicios-heading h1{
+        font-size: 46px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .seccion__servicios-heading h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+}

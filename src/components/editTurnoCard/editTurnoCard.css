@@ -1,0 +1,72 @@
+/* .container__editTurno-card{
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+ } */
+ 
+ /* .container__editTurno-card .container__editTurno-card_column{
+    background: white;
+    background-size: cover;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+ } */
+  
+ .container__editTurno-card .container__editTurno-card_column{
+   /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 1rem; */
+    margin: 0 1rem;
+ }
+
+ .container__editTurno-card .container__editTurno-card_column form p{
+   font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    /* line-height: 30px; */
+ }
+ 
+ .container__editTurno-card .form-element{
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1; 
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: box-shadows .2s;
+ }
+
+ .container__editTurno-card form *{
+    margin-top: 0.5rem;
+ }
+ 
+ .container__editTurno-card form button{
+    background-color: var(--color-main);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .2s;
+    font-size: 18px;
+ }
+ 
+ .container__editTurno-card form button:active{
+    scale: .95;
+    background-color: darken(var(--color-main), 10%);
+ }
+ 
+ .container__editTurno-card .form-element:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-main);
+ }
+
+ .container__editTurno-card-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }

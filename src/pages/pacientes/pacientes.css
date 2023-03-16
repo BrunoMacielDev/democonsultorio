@@ -1,0 +1,95 @@
+.pacientes__heading h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.pacientes__heading{
+    width: 100%;
+    text-align: left;
+    padding: 2rem 0 0 3rem;
+}
+
+.lista_pacientes{
+    margin-top: 1rem;
+    font-family: var(--font-family);
+    padding: 1rem;
+}
+
+.lista_pacientes h2{
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.lista_pacientes table{
+    background: #fff;
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+    transition: all 300ms ease;
+}
+
+.lista_pacientes table:hover{
+    box-shadow: none;
+}
+
+.lista_pacientes table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+    color: #677483;
+
+}
+
+.lista_pacientes table tbody tr:last-child td{
+    border: none;
+}
+
+.lista_pacientes a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+}
+
+.pacientes__hc-btn a{
+    padding: 5px 25px;
+   display: inline-block;
+   font-size: 16px;
+   border: 2px solid #0037ff;
+   color: black;
+   border-radius: 40px;
+   cursor: pointer;
+   transition: all .3s;
+}
+.pacientes__hc-btn a:hover{
+background-color: #0037ff;
+color: white;
+}
+
+@media screen and (max-width: 550px) {
+    .lista_pacientes{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .lista_pacientes svg{
+        font-size: 18px;
+    }
+
+    .lista_pacientes table thead tr{
+        font-size: 13px;
+    }
+
+    .lista_pacientes table tbody td{
+        font-size: 13px;
+    }
+    .turnos__actions button{
+        font-size: 20px;
+    }
+ }

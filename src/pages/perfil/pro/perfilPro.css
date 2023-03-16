@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+ .container__perfilPro{
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+    padding: 1.5rem;
+ }
+ .container__perfilPro:after{
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-main);
+    height: 100vh;
+    width: 60%;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+    z-index: -1;
+ }
+ 
+ .container__perfilPro-card{
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .container__perfilPro-card .container__perfilPro-card_column{
+    background: white;
+    background-size: cover;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+ }
+ 
+ .container__perfilPro-card .container__perfilPro-card_column{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    background: var(--gradient-text);
+ }
+
+ .container__perfilPro-card .container__perfilPro-card_column form p{
+   font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+ }
+
+ .container__perfilPro-card .container__perfilPro-card_column form h3{
+   font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 45px;
+ }
+ 
+ .container__perfilPro-card .form-element{
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1; 
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: box-shadows .2s;
+ }
+
+ .container__perfilPro-card form *{
+    margin-top: 0.5rem;
+ }
+ 
+ .container__perfilPro-card form button{
+    background-color: var(--color-main);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .2s;
+    font-size: 18px;
+ }
+ 
+ .container__perfilPro-card form button:active{
+    scale: .95;
+    background-color: darken(var(--color-main), 10%);
+ }
+ 
+ .container__perfilPro-card .form-element:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-main);
+ }
+
+ .container__perfilPro-card-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .list_turnos{
+   font-family: var(--font-family);
+   padding: 2rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.list_turnos h2{
+   margin-bottom: 0.8rem;
+   font-weight: bold;
+   font-size: 20px;
+   color: #fff;
+}
+
+.list_turnos table{ 
+   width: 100%;
+   border-radius: 0.4rem;
+   padding: 2rem;
+   text-align: center;
+   box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+   transition: all 300ms ease;
+
+   background: var(--gradient-text)
+}
+
+.list_turnos table:hover{
+   box-shadow: none;
+}
+
+.list_turnos table tbody td{
+   height: 2.8rem;
+   border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+   font-weight: 500;
+}
+
+.list_turnos a{
+   text-align: center;
+   display: block;
+   margin: 1rem auto;
+}
+
+.list_turnos table tbody tr:last-child td{
+   border: none;
+}
+
+.turnos-btn button{
+   padding: 5px 25px;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid var(--color-footer);
+  color: white;
+  background: var(--color-footer);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+.turnos-btn button:hover{
+border: 2px solid var(--color-main);
+background-color: var(--color-main);
+color: white;
+}
+
+.list-header{
+   display: flex;
+}
+
+.list-header svg {
+   margin-left: 0.5rem;
+   cursor: pointer;
+   color: #fff;
+   font-size: 27px;
+}
+.list-header svg:hover {
+   color: gainsboro;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container__profilePro{
+   font-family: var(--font-family);
+   display: flex;
+   justify-content: center;
+   min-height: 100vh;
+   padding: 1.5rem;
+}
+.container__profilePro:after{
+   content: '';
+   position: fixed;
+   inset: 0;
+   background-color: #0037ff;
+   height: 100vh;
+   width: 60%;
+   clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+   z-index: -1;
+}
+
+.container__profilePro-card{
+   background-color: white;
+   border: 1px solid #ddd;
+   box-shadow: 0 10px 50px -30px black;
+   width: 1200px;
+   border-radius: 30px;
+   overflow: hidden;
+}
+
+.container__profilePro-card a{
+   text-decoration: none;
+   color: #0037ff
+}
+
+.container__profilePro-card .container__profilePro-card_column{
+   padding: 2rem;
+}
+
+.container__profilePro-card .container__profilePro-card_column{
+   background: white;
+   background-size: cover;
+   display: flex;
+   gap: 40px;
+   flex-direction: column;
+}
+
+
+.container__profilePro-card h1{
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.container__profilePro-card .form-element{
+   width: 100%;
+   border: none;
+   background-color: #f1f1f1; 
+   padding: 20px 30px;
+   font-size: 18px;
+   border-radius: 50px;
+   transition: box-shadows .2s;
+}
+
+.container__profilePro-card form *{
+   margin-top: 1rem;
+}
+
+.container__profilePro-card form button{
+   background-color: #0037ff;
+   color: white;
+   border: none;
+   padding: 20px 40px;
+   border-radius: 50px;
+   font-weight: 600;
+   transition: all .2s;
+   font-size: 18px;
+}
+
+.container__profilePro-card form button:active{
+   scale: .95;
+   background-color: darken(#0037ff, 10%);
+}
+
+.container__profilePro-card .form-element:focus{
+   outline: none;
+   box-shadow: 0 0 0 2px #0037ff;
+}
+
+
+.flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.deleteAccount{
+   padding: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.deleteAccount a{
+   color: #F23518;
+}
+ /* Responsive */
+ 
+ @media (max-width: 992px) {
+    .container__perfilPro-card{
+        display: block;
+        width: 800px;
+        text-align: center;
+    }
+ 
+    .flex{
+        flex-direction: row;
+        gap: 1rem;
+    }
+ 
+    .container__perfilPro-card_column{
+        display: none;
+    }
+ 
+    .social-bttn{
+        justify-items: center;
+    }
+ }
+
+ @media screen and (max-width:850px) {
+   .container__perfilPro-card{
+      display: block;
+      width: 500px;
+      text-align: center;
+  }
+
+  .container__perfilPro{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .flex{
+      flex-direction: row;
+      gap: 1rem;
+  }
+
+  .container__perfilPro-card_column{
+      display: none;
+  }
+
+  .turnos-btn button{
+   font-size: 12px;
+  }
+
+ }

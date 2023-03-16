@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ .button_back{
+   display: flex;
+   flex-direction: column;
+   width: 10px;
+   background-color: black;
+ }
+ 
+ .container__loginPac{
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+ }
+ .container__loginPac:after{
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: #0037ff;
+    height: 100vh;
+    width: 60%;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+    z-index: -1;
+ }
+ 
+ .container__loginPac-card{
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+ }
+ 
+ .container__loginPac-card a{
+    text-decoration: none;
+    color: #0037ff
+ }
+ 
+ .container__loginPac-card .container__loginPac-card_column{
+    padding: 4rem;
+ }
+ 
+ .container__loginPac-card .container__loginPac-card_column:last-child{
+    background: white;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+ }
+ 
+ .container__loginPac-card .container__loginPac-card_column:last-child::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, white, #ffffff82);
+    inset: 0;
+ }
+ 
+ .container__loginPac-card .container__loginPac-card_column:last-child *{
+    z-index: 1;
+ }
+ 
+ .container__loginPac-card .container__loginPac-card_column:last-child a{
+    padding: 12px 30px;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #0037ff;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+ }
+ 
+ .container__loginPac-card .container__loginPac-card_column:last-child a:hover{
+    background-color: #0037ff;
+    color: white;
+ }
+ 
+ .container__loginPac-card .container__loginPac-card_column:last-child{
+    text-align: center;
+ }
+ 
+ .container__loginPac-card h1{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+ }
+ 
+ .container__loginPac-card .form-element{
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1; 
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: box-shadows .2s;
+ }
+ 
+ .container__loginPac-card form{
+    margin-top: 3rem;
+ }
+ 
+ .container__loginPac-card form *{
+    margin-top: 1rem;
+ }
+ 
+ .container__loginPac-card form button{
+    background-color: #0037ff;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .2s;
+    font-size: 18px;
+ }
+ 
+ .container__loginPac-card form button:active{
+    scale: .95;
+    background-color: darken(#0037ff, 10%);
+ }
+ 
+ .container__loginPac-card .form-element:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #0037ff;
+ }
+ 
+ .container__loginPac-card form .form-checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-left: 5px;
+ }
+
+
+ 
+ .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .container__loginPac-card input[type="checkbox"]{
+    accent-color: #0037ff;
+    width: 16px;
+    height: 16px;
+ }
+ 
+ .social-bttn{
+    display: flex;
+    gap: 1rem;
+ }
+ .social-bttn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: black;
+    border-radius: 50px;
+    font-size: 23px;
+ }
+ 
+ 
+ .social-bttn a:hover{
+    scale: .95;
+ }
+ 
+ .container__loginPac-card_column:last-child h2{
+    font-weight: bold;
+    font-size: 25px;
+ }
+ 
+ /* Responsive */
+ 
+ @media (max-width: 992px) {
+    .container__loginPac-card{
+        display: block;
+        width: 500px;
+        text-align: center;
+    }
+ 
+    .flex{
+        flex-direction: row;
+        gap: 1rem;
+    }
+ 
+    .container__loginPac-card_column:last-child{
+        display: none;
+    }
+ 
+    .social-bttn{
+        justify-items: center;
+    }
+ }
