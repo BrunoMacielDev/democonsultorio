@@ -1,57 +1,56 @@
 import React from "react";
 import "./servicios.css";
 import Articulo from "../../components/articulo/Articulo";
-import { servicios1, servicios2, servicios3, servicios5, servicios6, servicios7, servicios8, servicios10 } from "./imports";
 
 const Servicios = () => {
   return (
     <div className="seccion__servicios section__padding" id="blog">
       <div className="seccion__servicios-heading">
         <h1 className="gradient__text">
-          Conoce nuestras instalaciones.
+          Solucion ideal
         </h1>
       </div>
       <div className="seccion__servicios-container">
         <div className="seccion__servicios-container_groupB">
         <Articulo
-            imgUrl={servicios1}
-            titulo="HABITACIONES"
-            parrafo="Habitaciones muy luminosas y confortables, dobles e individuales, camas ortopédicas con colchones de aire anti escaras, baño privado con TV, aire acondicionado y calefacción."
+            imgUrl="https://www.materialestetica.com/blog/wp-content/uploads/2019/03/3-pasos-para-montar-un-centro-de-estetica-que-debo-saber.jpg"
+            titulo="Esteticas"
+            // parrafo=""
           />
           <Articulo
-            imgUrl={servicios2}
-            titulo="CUIDADOS ESPECIALES Y PALIATIVOS"
-            parrafo="Piso de cuidados especiales con monitoreo permanente mediante sistema de circuito cerrado."
+            imgUrl="https://www.namesnack.com/images/Namesnack-nombres-para-cl%C3%ADnicas-m%C3%A9dicas-3428x2333-20210812.jpeg?crop=21:16,smart&width=420&dpr=2"
+            titulo="Clinicas medicas"
+            // parrafo=""
           />
           <Articulo
-            imgUrl={servicios3}
-            titulo="ENFERMERÍA"
-            parrafo="Office de enfermería en cada piso."
+            imgUrl="https://www.socialbauru.com.br/wp-content/uploads/2022/03/gabriela-marin-odontologia-estetica-bauru-11-1024x768.jpg"
+            titulo="Odontologias"
+            // parrafo="Office de enfermería en cada piso."
           />
           <Articulo
-            imgUrl={servicios5}
-            titulo="CONSULTORIOS"
-            parrafo="Consultorios para las distintas especialidades."
+            imgUrl="https://cdn.euroinnova.edu.es/img/subidasEditor/peluquer%C3%ADa-1615496220.webp"
+            titulo="Peluquerias"
+            // parrafo="Consultorios para las distintas especialidades."
           />
           <Articulo
-            imgUrl={servicios6}
-            titulo="FARMACIA"
-            parrafo="La farmacia está a cargo de un profesional certificado asegurando la trazabilidad de la medicación"
+            imgUrl="https://t2.uc.ltmcdn.com/es/posts/5/8/5/cuando_llevar_a_mi_gato_al_veterinario_42585_orig.jpg"
+            titulo="Veterinarias"
+            // parrafo="La farmacia está a cargo de un profesional certificado asegurando la trazabilidad de la medicación"
           />
           <Articulo
-            imgUrl={servicios7}
-            titulo="SUM"
-            parrafo="Amplio salón donde se realizan almuerzos, actividades grupales y recreativas"
+            imgUrl="https://www.clubtalleres.com.ar/wp-content/uploads/2021/11/ACB_6209-scaled.jpg"
+            titulo="Centros deportivos"
+            // parrafo="Amplio salón donde se realizan almuerzos, actividades grupales y recreativas"
           />
           <Articulo
-            imgUrl={servicios8}
-            titulo="LABORATORIO Y RADIOLOGÍA"
-            parrafo="Brindamos servicios de estudios de laboratorio y radiología"
+            imgUrl="https://tueme.co/wp-content/uploads/2022/02/4.2.1-santabarbara-sedes-1-1-1024x683.jpg"
+            titulo="Consultorios"
+            // parrafo="Brindamos servicios de estudios de laboratorio y radiología"
           />
           <Articulo
-            imgUrl={servicios10}
-            titulo="COCINA"
-            parrafo="La cocina está dirigida por nutricionista y chef en tarea conjunta al servicio de la salud y gustos de los pacientes."
+            imgUrl="https://www.drake.edu/media/departmentsoffices/kinesiology/images/AnkleTaping.jpg"
+            titulo="Centros de rehabilitacion"
+            // parrafo="La cocina está dirigida por nutricionista y chef en tarea conjunta al servicio de la salud y gustos de los pacientes."
           />
         </div>
       </div>

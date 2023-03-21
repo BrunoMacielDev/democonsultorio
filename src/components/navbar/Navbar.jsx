@@ -46,7 +46,7 @@ const Navbar = () => {
         <>
           <div className="consultorio__navbar-sign">
             <button type="button">
-              <Link to={"/login"}>Ingresar</Link>
+              <Link to={"/login"}>Demo</Link>
             </button>
           </div>
         </>
@@ -135,7 +135,7 @@ const Navbar = () => {
                 <>
                   <div className="consultorio__navbar-menu_container-links-sign">
                     <button type="button">
-                      <Link to={"/login"}>Ingresar</Link>
+                      <Link to={"/login"}>Demo</Link>
                     </button>
                   </div>
                 </>

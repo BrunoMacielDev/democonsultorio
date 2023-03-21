@@ -5,107 +5,98 @@ import laptop from "../../assets/laptop.png";
 import Obras_sociales from "../../components/obras_sociales/Obras_sociales";
 import Caracteristicas from "../caracteristicas/Caracteristicas";
 import Servicios from "../servicios/Servicios";
-import teachers from "../../assets/teachers.png";
+import people from "../../assets/people.png";
 
 function Seccion() {
   return (
     <>
       <div className="seccion seccion_pad" id="home">
         <div className="seccion-content">
-          <h1 className="gradient__text">Servicios de salud de alta calidad</h1>
+          <h1 className="gradient__text">Fluidez para vos y tus clientes</h1>
           <p>
-            Brindamos servicios con eficiencia, honestidad y calidez, con un
-            excelente equipo humano comprometidos con la recuperación y
-            reinserción social de nuestros pacientes.
+            ShiftFlow es un sistema creado para gestionar turnos enfocado a
+            mejorar la experiencia del cliente y de los profesionales que lo
+            usen.
           </p>
+          <p>
+            Si estas interesado en contratar el servicio, deja un email aqui debajo.
+          </p>
+          <div className="seccion__header-content__input">
+            <input type="email" placeholder="Email de contacto" />
+            <button type="button">Enviar</button>
+          </div>
+          <div className="seccion__header-content__people">
+            <img src={people} alt="people" />
+            <p>Elegido por +20 emprendedores.</p>
+          </div>
         </div>
         <div className="seccion-image">
           <img src={laptop} alt="laptop" />
         </div>
       </div>
-      <div className="seccion__obras">
-        <Obras_sociales />
-      </div>
+
       <div className="seccion__body section__margin">
         <div className="seccion__body-feature">
           <div className="seccion__features-container__feature">
             <div className="seccion__features-container__feature-title">
               <div />
-              <h1>Profesionales y Equipo</h1>
+              <h1>Gestion de usuarios</h1>
             </div>
             <div className="seccion__features-container_feature-text">
               <p>
-                Contamos con un equipo multidisciplinario de profesionales que
-                desde el ingreso contemplan todas las aristas de este complejo
-                proceso
+                Tus profesionales podran gestionar los turnos de sus clientes y
+                viceversa, la idea es que sea una conexion entre
+                profesional-cliente mas fluida.
               </p>
             </div>
           </div>
         </div>
         <div className="seccion__body-heading">
-          <h1 className="gradient__text"> Institucional</h1>
+          <h1 className="gradient__text"> Usuarios</h1>
         </div>
 
         <div className="seccion__body-container">
           <div className="seccion__features-container__feature">
             <div className="seccion__features-container__feature-title">
               <div />
-              <h1>Mision</h1>
+              <h1>Clientes</h1>
             </div>
             <div className="seccion__features-container_feature-text">
               <p>
-                Brindar servicios de salud de alta calidad con eficiencia,
-                honestidad y calidez, mediante el trabajo de un excelente equipo
-                humano y el apoyo de nuestra organización empresarial,
-                comprometidos con la recuperación y reinserción social de
-                nuestros pacientes
+                Podran elegir el turno que deseen para luego ser confirmado por
+                el profesional. Podran elegir con que profesional atenderse y
+                ver datos del mismo.
               </p>
             </div>
           </div>
           <div className="seccion__features-container__feature">
             <div className="seccion__features-container__feature-title">
               <div />
-              <h1>Vision</h1>
+              <h1>Profesionales</h1>
             </div>
             <div className="seccion__features-container_feature-text">
               <p>
-                Obtener el genuino reconocimiento de la comunidad a los
-                constantes esfuerzos del equipo de salud, para que mediante su
-                actitud proactiva y la internalización de las acciones de mejora
-                contínua logre destacarse como un Centro de Rehabilitación de
-                excelencia.
+                Podran gestionar una lista de clientes con los ultimos turnos de
+                los mismos ademas de poder agendar, modificar o cancelar el
+                turno a un cliente en particular
               </p>
             </div>
           </div>
         </div>
       </div>
       <Caracteristicas />
-      <div className="pasantias section__padding" id="pasantias">
-        <div className="pasantias-image">
-          <img src={teachers} alt="possibility" />
-        </div>
-        <div className="pasantias-content">
-          <h4>Capacitaciones internas</h4>
-          <h1 className="gradient__text">Capacitación y Docencia</h1>
-          <p>
-            Las pasantías están destinadas a los alumnos avanzados de las
-            Universidades y otras instituciones educativas con las cuales
-            nuestra Clínica ha firmado convenios procurando que los mismos
-            adquieran experiencia fortaleciendo su aprendizaje. Universidad del
-            Salvador (carrera Musicoterapia) / Cruz roja (carrera Enfermería) /
-            Fundación Barceló (carrera Kinesiología)
-          </p>
-          <h4>Martes por medio de cada mes con certificación. </h4>
-        </div>
-      </div>
       <div className="seccion__registro">
         <div className="seccion__registro-content">
-          <p>Registrate como paciente</p>
-          <h3>Registrate como paciente para comenzar a conocerte.</h3>
+          <p>Sistema a medida</p>
+          <h3>
+            Si quieres una experiencia mas personalizada y adaptada a tu negocio
+          </h3>
         </div>
         <div className="seccion__registro-btn">
           <button type="button">
-            <Link to={"/register-pacientes"}>Registro</Link>
+            <Link to={"https://www.linkedin.com/in/brunomacieldev/"}>
+              Contacto
+            </Link>
           </button>
         </div>
       </div>

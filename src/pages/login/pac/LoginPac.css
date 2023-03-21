@@ -150,6 +150,10 @@
     align-items: center;
  }
 
+ .container__loginPac-card_column:last-child h2{
+   font-weight: bold;
+   font-size: 25px;
+}
  
  /* Responsive */
  
